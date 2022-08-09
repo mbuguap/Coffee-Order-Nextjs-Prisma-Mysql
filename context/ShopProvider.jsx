@@ -30,7 +30,7 @@ const ShopProvider = ({ children }) => {
 
   useEffect(() => {
     const newTotal = order.reduce(
-      (total, product) => product.precio * product.amount + total,
+      (total, product) => product.price * product.amount + total,
       0
     );
 
@@ -86,7 +86,7 @@ const ShopProvider = ({ children }) => {
         order,
         name,
         total,
-        fecha: Date.now().toString(),
+        date: Date.now().toString(),
       });
 
       // Resetear la app

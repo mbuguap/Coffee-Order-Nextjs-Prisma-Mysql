@@ -21,13 +21,13 @@ const customStyles = {
 
 Modal.setAppElement('#__next');
 
-export default function Layout({ children, page }) {
+export default function Layout({ children, pageTitle }) {
   const { modal } = useShop();
 
   return (
     <>
       <Head>
-        <title>Café - {page}</title>
+        <title>{`Café - ${pageTitle}`}</title>
         <meta name='description' content='Shop Cafetería' />
       </Head>
 

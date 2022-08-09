@@ -5,7 +5,7 @@ import SummaryProduct from '../components/SummaryProduct';
 export default function Summary() {
   const { order } = useShop();
   return (
-    <Layout page='Summary'>
+    <Layout pageTitle='Summary'>
       <h1 className='text-4xl font-black'>Summary</h1>
       <p className='text-2xl my-10'>Confirm Your Order</p>
 

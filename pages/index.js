@@ -6,7 +6,7 @@ export default function Home() {
   const { categoryActual } = useShop();
 
   return (
-    <Layout page={`Menú ${categoryActual?.name}`}>
+    <Layout pageTitle={`Menú ${categoryActual?.name}`}>
       <h1 className='text-4xl font-black'>{categoryActual?.name}</h1>
       <p className='text-2xl my-10'>Choose and customize your order below</p>
 

@@ -15,7 +15,7 @@ export default function Total() {
   }, [order, checkOrder]);
 
   return (
-    <Layout page='Confirm Order'>
+    <Layout pageTitle='Confirm Order'>
       <h1 className='text-4xl font-black'>Confirm Order</h1>
       <p className='text-2xl my-10'>Confirm your Order Below</p>
 
@@ -52,7 +52,7 @@ export default function Total() {
                 ? 'bg-indigo-100'
                 : 'bg-indigo-600 hover:bg-indigo-800'
             }  w-full lg:w-auto px-5 py-2 rounded uppercase font-bold text-white text-center`}
-            value='Confirmar Pedido'
+            value='Confirm Order'
             disabled={checkOrder()}
           />
         </div>
